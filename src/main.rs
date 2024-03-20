@@ -1,6 +1,7 @@
 use axum::{response::IntoResponse, routing::get, Json, Router};
 
 mod domain;
+mod errors;
 
 async fn health_check_handler() -> impl IntoResponse {
     const MESSAGE: &str = "Server is running";
